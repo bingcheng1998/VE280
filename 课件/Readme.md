@@ -1,8 +1,8 @@
-#关于C++中的不变式
+# 关于C++中的不变式
 
 类必须实现不变式（Classes Should Enforce Invariants） Bjarne Stroustrup: 我的基本原则式真正的类必须有一个接口，有一个隐含的不变式（invariant）
 
-Bill Venners: 不变式（invariant）是什么东西？
+Bill Venners: **不变式（invariant）**是什么东西？
 
 Bjarne Stroustrup: 什么使一个对象（object）有效？是不变式（invariant）。我以vector举例说明。vector知道自己有n个元素（element），vector也知道自己有一个指针指向这些元素。以上两点就是不变式（invariant）。如果vector实际上竟然有n+1个元素，就出问题了。如果vector包含的指针为0，也表示有bug。所以在定义一个类前，你必须明确什么是不变式（invariant），类的接口必须体现了不变式（invariant）。如果类的成员函数（member function）不能体现不变式，也许这个函数应该放到类的外面比较好。牢记类的不变式，你就能得到一个简洁而小的接口，易于理解和维护。
 
