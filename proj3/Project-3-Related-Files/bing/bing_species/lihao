@@ -1,0 +1,5 @@
+ifenemy 4    If there is an enemy, go to step 4.
+hop         If no enemy, turn left.
+go 1
+infect
+go 1

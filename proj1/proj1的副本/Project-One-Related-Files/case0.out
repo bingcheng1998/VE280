@@ -1,0 +1,42 @@
+Please input seed: Score: 0
+_ _ _ _ _ _ _ 
+Already proposed characters: 
+
+Please enter a letter (a-z): Score: 1
+_ _ _ _ _ _ _ 
+Already proposed characters: 
+a 
+Please enter a letter (a-z): Score: 2
+_ _ _ _ _ _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c _ _ _ _ _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c r _ _ _ _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c r o _ _ _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c r o q _ _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c r o q u _ _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 2
+c r o q u e _ 
+Already proposed characters: 
+a y 
+Please enter a letter (a-z): Score: 3
+c r o q u e _ 
+Already proposed characters: 
+a y z 
+Please enter a letter (a-z): The word was: croquet
+You won!

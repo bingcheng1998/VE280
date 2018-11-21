@@ -1,0 +1,13 @@
+all: hangman
+
+hangman: p1.o rand.o
+	g++ -o Hangman p1.o rand.o
+
+p1.o: p1.cpp
+	g++ -c p1.cpp
+
+rand.o: rand.cpp
+	g++ -c rand.cpp
+
+clean:
+	rm -f  run_add *.o

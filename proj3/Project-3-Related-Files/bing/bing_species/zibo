@@ -1,0 +1,4 @@
+ifenemy 2    If there is an enemy, go to step 4.
+infect       If no enemy, turn left.
+go 1
+

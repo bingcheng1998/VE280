@@ -1,0 +1,181 @@
+Initial state
+li_e ____ ____ ____ zi_s 
+____ ____ ____ ____ ____ 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Round 1
+Creature (lihao east 0 0) takes action:
+Instruction 1: ifenemy 4
+Instruction 2: hop
+____ li_e ____ ____ zi_s 
+____ ____ ____ ____ ____ 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo south 0 4) takes action:
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ li_e ____ ____ zi_s 
+____ ____ ____ ____ ____ 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo west 4 4) takes action:
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ li_e ____ ____ zi_s 
+____ ____ ____ ____ ____ 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo north 4 0) takes action:
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ li_e ____ ____ zi_s 
+____ ____ ____ ____ ____ 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (yuhang north 2 0) takes action:
+Instruction 1: ifwall 4
+Instruction 2: hop
+____ li_e ____ ____ zi_s 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Round 2
+Creature (lihao east 0 1) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 4
+Instruction 2: hop
+____ ____ li_e ____ zi_s 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo south 0 4) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ ____ li_e ____ zi_s 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo west 4 4) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ ____ li_e ____ zi_s 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo north 4 0) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+____ ____ li_e ____ zi_s 
+yu_n ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (yuhang north 1 0) takes action:
+Instruction 3: go 1
+Instruction 1: ifwall 4
+Instruction 2: hop
+yu_n ____ li_e ____ zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Round 3
+Creature (lihao east 0 2) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 4
+Instruction 2: hop
+yu_n ____ ____ li_e zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo south 0 4) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+yu_n ____ ____ li_e zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo west 4 4) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+yu_n ____ ____ li_e zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (zibo north 4 0) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 2
+Instruction 2: infect
+yu_n ____ ____ li_e zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Creature (yuhang north 0 0) takes action:
+Instruction 3: go 1
+Instruction 1: ifwall 4
+Instruction 4: right
+yu_e ____ ____ li_e zi_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+zi_n ____ ____ ____ zi_w 
+Round 4
+Creature (lihao east 0 3) takes action:
+Instruction 3: go 1
+Instruction 1: ifenemy 4
+Instruction 4: infect
+li_e ____ ____ li_e li_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+li_n ____ ____ ____ li_w 
+Creature (lihao south 0 4) takes action:
+Instruction 1: ifenemy 4
+Instruction 2: hop
+li_e ____ ____ li_e ____ 
+____ ____ ____ ____ li_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+li_n ____ ____ ____ li_w 
+Creature (lihao west 4 4) takes action:
+Instruction 1: ifenemy 4
+Instruction 2: hop
+li_e ____ ____ li_e ____ 
+____ ____ ____ ____ li_s 
+____ ____ ____ ____ ____ 
+____ ____ ____ ____ ____ 
+li_n ____ ____ li_w ____ 
+Creature (lihao north 4 0) takes action:
+Instruction 1: ifenemy 4
+Instruction 2: hop
+li_e ____ ____ li_e ____ 
+____ ____ ____ ____ li_s 
+____ ____ ____ ____ ____ 
+li_n ____ ____ ____ ____ 
+____ ____ ____ li_w ____ 
+Creature (lihao east 0 0) takes action:
+Instruction 1: ifenemy 4
+Instruction 2: hop
+____ li_e ____ li_e ____ 
+____ ____ ____ ____ li_s 
+____ ____ ____ ____ ____ 
+li_n ____ ____ ____ ____ 
+____ ____ ____ li_w ____ 

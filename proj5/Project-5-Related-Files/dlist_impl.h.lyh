@@ -1,0 +1,149 @@
+#include "dlist.h"
+#include <cstdlib>
+
+template<class T>
+bool Dlist<T>::isEmpty() const
+{
+    return (!first);
+}
+
+template<class T>
+void Dlist<T>::insertFront(T *op)
+{
+    auto newNode = new node;
+    newNode->op = op;
+    if (isEmpty())
+    {
+        newNode->prev = newNode->next = newNode;
+        last = newNode;
+    } else
+    {
+        newNode->prev = last;
+        newNode->next = first;
+        last->next = newNode;
+        first->prev = newNode;
+    }
+    first = newNode;
+}
+
+template<class T>
+void Dlist<T>::insertBack(T *op)
+{
+    auto newNode = new node;
+    newNode->op = op;
+    if (isEmpty())
+    {
+        newNode->prev = newNode->next = newNode;
+        first = newNode;
+    } else
+    {
+        newNode->prev = last;
+        newNode->next = first;
+        last->next = newNode;
+        first->prev = newNode;
+    }
+    last = newNode;
+}
+
+template<class T>
+T *Dlist<T>::removeFront()
+{
+    if (isEmpty())
+    {
+        throw emptyList();
+    }
+    auto oldNode = first;
+    auto op = oldNode->op;
+    if (oldNode == oldNode->next)
+    {
+        first = last = NULL;
+    } else
+    {
+        first = oldNode->prev->next = oldNode->next;
+        oldNode->next->prev = oldNode->prev;
+    }
+    delete oldNode;
+    return op;
+}
+
+template<class T>
+T *Dlist<T>::removeBack()
+{
+    if (isEmpty())
+    {
+        throw emptyList();
+    }
+    auto oldNode = last;
+    auto op = oldNode->op;
+    if (oldNode == oldNode->next)
+    {
+        first = last = NULL;
+    } else
+    {
+        oldNode->prev->next = oldNode->next;
+        last = oldNode->next->prev = oldNode->prev;
+    }
+    delete oldNode;
+    return op;
+}
+
+template<class T>
+Dlist<T>::Dlist(): first(0), last(0)
+{
+}
+
+template<class T>
+Dlist<T>::Dlist(const Dlist &l): first(0), last(0)
+{
+    copyAll(l);
+}
+
+template<class T>
+Dlist<T> &Dlist<T>::operator=(const Dlist &l)
+{
+    if (this != &l)
+    {
+        removeAll();
+        copyAll(l);
+    }
+    return *this;
+}
+
+template<class T>
+Dlist<T>::~Dlist()
+{
+    removeAll();
+}
+
+template<class T>
+void Dlist<T>::removeAll()
+{
+    if (!isEmpty())
+    {
+        auto temp = first;
+        while (temp != last)
+        {
+            temp = temp->next;
+            delete temp->prev->op;
+            delete temp->prev;
+        }
+        delete temp->op;
+        delete temp;
+    }
+    first = last = NULL;
+}
+
+template<class T>
+void Dlist<T>::copyAll(const Dlist &l)
+{
+    if (l.last != NULL)
+    {
+        auto temp = l.last;
+        while (temp != l.first)
+        {
+            insertFront(new T(*temp->op));
+            temp = temp->prev;
+        }
+        insertFront(new T(*temp->op));
+    }
+}

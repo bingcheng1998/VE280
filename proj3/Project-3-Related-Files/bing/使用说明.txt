@@ -1,0 +1,2 @@
+./p3 ./bing/species ./bing/bingworld/bingworld 4 v > bingworld.out
+diff bingworld.out ./bing/bingworld/bingworld.answer 
