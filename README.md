@@ -12,6 +12,14 @@ According to the student handbook (2015 version),
 
 ---
 
+## Slides
+
+<img src="https://ws4.sinaimg.cn/large/006tNbRwly1fy6d3dogocj31km0iwwhw.jpg" width="400" align=left />
+
+
+
+---
+
 ## Mid 1 Review
 
 # 03
